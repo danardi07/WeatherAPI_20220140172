@@ -36,6 +36,14 @@
           }
         });
       }
+      document.getElementById("getCuaca").onclick = function() {
+        const kota = document.getElementById("kota").value.trim();
+        if (kota) {
+          getCuaca(kota);
+        } else {
+          document.getElementById("tampilan").innerHTML = "";
+        }
+      };
     </script>
   </body>
 </html>
