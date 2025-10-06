@@ -8,5 +8,11 @@
   <input type="text" placeholder="">
 
   <button id="getCuaca">GET</button>
+
+  <div id="tampilan"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      function getCuaca(kota) {
+        const urlapi = `http://api.weatherapi.com/v1/current.json?key=31d6254bbe624b8ba5011428250610&q=${encodeURIComponent(kota)}&aqi=no`;
 </body>
 </html>
